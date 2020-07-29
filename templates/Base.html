@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title> {% block tittle %} INICIO  {% endblock %} </title>
+</head>
+<body>
+
+ <h1 class d-block>Dr. Teodoro Maldonado Carbo</h1>
+    <ul>
+        <li>   <a href="{% url "home"%}">PORTADA</a>              </li>
+        <li>   <a href="{% url "asistencia"%}"> Asistencias </a>   </li>
+        <li>   <a href="{% url "notas"%}"> Calificaciones </a>     </li>
+        <li>   <a href="{% url "personal"%}"> Personal </a>     </li>
+        <li>   <a href="{% url "estudiantes"%}"> Estudiantes </a>     </li>
+        <li>   <a href="{% url "materias"%}"> Materias </a>     </li>
+        <li>   <a href="{% url "cursos"%}"> Cursos </a>     </li>
+    </ul>
+
+{% block content %}    {% endblock %}
+
+</body>
+</html>
+
